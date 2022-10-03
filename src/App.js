@@ -20,22 +20,22 @@ function App() {
   }, [])
   
   return (
-    <div className="main">
+    <section className="main">
       <h1>ELEIÇÕES 2022 - APURAÇÃO 1º turno</h1>
       { candidatos.map((cand, i) => {
         const {
           nm, pvap, n, cc
         } = cand;
       return (
-        <div key={i} className="cand-card">
+        <section key={i} className="cand-card">
           <h2 className="cand-name"> { nm } </h2>
           <h3 className="cand-number"> { n } </h3>
           <p className="cand-percentual"> { pvap }% </p>
           <p className="cand-partido"> { cc } </p>
-        </div>
+        </section>
       )
     })}
-    </div>
+    </section>
   )
 }
 
