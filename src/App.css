@@ -5,7 +5,7 @@
   flex-direction: column;
   gap: 20px;
   background-image: url('https://www.4oito.com.br/media/noticias/apuracao-dos-votos_73028.jpg');
-  background-size:auto;
+  background-size:contain;
 }
 
 .cand-card {

@@ -13,7 +13,10 @@ function App() {
   }
 
   useEffect(() => {
-    fetchAPI();
+    const interval = setInterval(() => {
+      fetchAPI();
+    }, 50000);
+    return () => clearInterval(interval);
   }, [])
   
   return (
@@ -27,7 +30,7 @@ function App() {
         <div key={i} className="cand-card">
           <h2 className="cand-name"> { nm } </h2>
           <h3 className="cand-number"> { n } </h3>
-          <p className="cand-percentual"> { pvap } </p>
+          <p className="cand-percentual"> { pvap }% </p>
           <p className="cand-partido"> { cc } </p>
         </div>
       )
