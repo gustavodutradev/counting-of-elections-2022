@@ -1,0 +1,22 @@
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-image: url('https://www.4oito.com.br/media/noticias/apuracao-dos-votos_73028.jpg');
+  background-size:auto;
+}
+
+.cand-card {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid  rgba(0, 0, 0, 0.257);
+  border-radius: 3px;
+  width: 335px;
+  max-height: 235px;
+  box-shadow: 0 5px 15px 5px black;
+  transition: 0.2s;
+  margin: 10px;
+  background-color: white;
+}
